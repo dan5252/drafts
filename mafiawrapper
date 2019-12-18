@@ -11,20 +11,24 @@ Requirements:
   With no registration needed
   No need for fancy GUI
   Make GMs life easier as much as possible
+    Store setup to quickly adjust game
+    Drag and drop to switch places as in MafiaTool???
 
 Solution:
   Separate MafiaTool into MafiaEngine and a wrapper over it that pushes information fast.
-  Use web server as REST API controller for MafiaEngine. Run web server on smartphone.
-  Everyone has a browser. When running the server the IP is displayed. Inject a domain into LAN??
+  Everyone has a browser.
+  Use web server as REST API controller for MafiaEngine.
+    When running the server the IP is displayed. Inject a domain fo that IP into LAN??
+  Use routes to REST interact because no fancy GUI.
 
-Flow:
+ Flow:
   GM sets up the game once.
     gameplay settings
     player names
     roles
-  Store setup in cookies -> quickly adjust game
+  Store setup in cookies
     
-  Game loop:
+Game loop:
     Players do night votes through web browser. Day updates are displayed.
     Players do votes. GM kicks the voted out(may be multiple). GM progresses game to night.
     Upon transitions between day/night cycles win state is checked.
