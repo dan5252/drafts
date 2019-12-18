@@ -1,0 +1,34 @@
+Problem: MafiaTool uses GSM network to push SMSes. GSM network is slow.. boring players for waiting.
+Everyone has a phone. GSM even when not 3G or more.
+
+Requirements:
+  Fast
+  Almost everywhere
+  Reuse code
+  No need for external connectvity. (A broken router which routes is good)
+  Keep it onto 1 device.
+  Security between players so they can't access others
+  With no registration needed
+  No need for fancy GUI
+  Make GMs life easier as much as possible
+
+Solution:
+  Separate MafiaTool into MafiaEngine and a wrapper over it that pushes information fast.
+  Use web server as REST API controller for MafiaEngine. Run web server on smartphone.
+  Everyone has a browser.
+
+Flow:
+  GM sets up the game once.
+    gameplay settings
+    player names
+    roles
+    
+  Game loop:
+    Players do night votes through web browser. Day updates are displayed.
+    Players do votes. GM kicks the voted out(may be multiple). GM progresses game to night.
+    Upon transitions between day/night cycles win state is checked.
+  
+
+
+  
+
