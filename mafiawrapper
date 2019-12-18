@@ -5,7 +5,7 @@ Requirements:
   Fast
   Almost everywhere
   Reuse code
-  No need for external connectvity. (A broken router which routes is good)
+  No need for external connectvity. (A fried port router which still wireless routes is good)
   Keep it onto 1 device.
   Security between players so they can't access others
   With no registration needed
@@ -15,13 +15,14 @@ Requirements:
 Solution:
   Separate MafiaTool into MafiaEngine and a wrapper over it that pushes information fast.
   Use web server as REST API controller for MafiaEngine. Run web server on smartphone.
-  Everyone has a browser.
+  Everyone has a browser. When running the server the IP is displayed. Inject a domain into LAN??
 
 Flow:
   GM sets up the game once.
     gameplay settings
     player names
     roles
+  Store setup in cookies -> quickly adjust game
     
   Game loop:
     Players do night votes through web browser. Day updates are displayed.
