@@ -141,7 +141,7 @@ arrow===0.16.0
 semantic-version===2.8.5
 virtualbmc===2.2.0
 deprecation===2.1.0
-SQLAlchemy===1.1.11
+SQLAlchemy==1.2.0
 pyroute2===0.5.14
 google-auth===1.21.0
 kazoo===2.8.0
